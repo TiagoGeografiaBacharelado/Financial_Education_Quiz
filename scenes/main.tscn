@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://bs3pmrooj4dod"]
+[gd_scene load_steps=3 format=3 uid="uid://bs3pmrooj4dod"]
+
+[ext_resource type="Script" path="res://scripts/controllers/gamer_controller.gd" id="1_2n48k"]
+[ext_resource type="Resource" uid="uid://mu6ha3ld7jjl" path="res://resources/varied/theme/theme_varied.tres" id="2_kjxgg"]
 
 [node name="Main" type="CanvasLayer"]
+script = ExtResource("1_2n48k")
+quiz = ExtResource("2_kjxgg")
 
 [node name="Content" type="Control" parent="."]
 layout_mode = 3
@@ -24,10 +29,11 @@ grow_horizontal = 2
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 size_flags_vertical = 6
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 40
 text = "Pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
 [node name="ImageHolder" type="Panel" parent="Content/Questionifo"]
 custom_minimum_size = Vector2(0, 400)
@@ -73,15 +79,23 @@ theme_override_constants/separation = 20
 [node name="ButtonOption1" type="Button" parent="Content/QuestionHolder"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 2
 
 [node name="ButtonOption2" type="Button" parent="Content/QuestionHolder"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 2
 
 [node name="ButtonOption3" type="Button" parent="Content/QuestionHolder"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 2
 
 [node name="ButtonOption4" type="Button" parent="Content/QuestionHolder"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 2
