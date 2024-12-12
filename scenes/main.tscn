@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs3pmrooj4dod"]
+[gd_scene load_steps=5 format=3 uid="uid://bs3pmrooj4dod"]
 
 [ext_resource type="Script" path="res://scripts/controllers/gamer_controller.gd" id="1_2n48k"]
 [ext_resource type="Resource" uid="uid://mu6ha3ld7jjl" path="res://resources/varied/theme/theme_varied.tres" id="2_kjxgg"]
+[ext_resource type="AudioStream" uid="uid://decrjx1b38cg7" path="res://assents/correta.wav" id="3_36yv7"]
+[ext_resource type="AudioStream" uid="uid://bpnm6v7meqoym" path="res://assents/incorreta.wav" id="4_1837i"]
 
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_2n48k")
@@ -101,3 +103,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 autowrap_mode = 2
+
+[node name="AudioCorrect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_36yv7")
+
+[node name="AudioIncorrect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1837i")
