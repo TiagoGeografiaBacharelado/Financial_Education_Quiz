@@ -6,6 +6,8 @@
 [node name="Main" type="CanvasLayer"]
 script = ExtResource("1_2n48k")
 quiz = ExtResource("2_kjxgg")
+color_right = Color(0.299479, 0.958333, 0, 1)
+color_wrong = Color(1, 0, 0, 1)
 
 [node name="Content" type="Control" parent="."]
 layout_mode = 3

@@ -28,3 +28,30 @@ func load_quiz() -> void:
 	var options = quiz.theme[index].options
 	for i in buttons.size():
 		buttons[i].text = options[i]
+		buttons[i].pressed.connect(_buttons_answer.bind(buttons[i]))
+		
+	match quiz.theme[index].type:
+		Enum.QuestionType.TEXT:
+			$Content/Questionifo/ImageHolder.hide()
+			
+		Enum.QuestionType.IMAGE:
+			$Content/Questionifo/ImageHolder.show()
+			question_image.texture = quiz.theme[index].question_image
+			
+		Enum.QuestionType.VIDEO:
+			$Content/Questionifo/ImageHolder.show()
+			question_video.stream = quiz.theme[index].question_video
+			question_video.play()
+			
+		Enum.QuestionType.AUDIO:
+			$Content/Questionifo/ImageHolder.show()
+			question_image.texture = quiz.theme[index].question_image
+			question_audio.stream = quiz.theme[index].question_audio
+			question_audio.play()
+			
+		
+func _buttons_answer(button) -> void: 
+	if quiz.theme[index].correct == button.text:
+		button.modulate = color_right
+	else:
+		button.modulate = color_wrong
