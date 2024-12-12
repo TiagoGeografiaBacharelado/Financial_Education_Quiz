@@ -104,8 +104,64 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 autowrap_mode = 2
 
+[node name="GamerOver" type="ColorRect" parent="Content"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.509766, 0.509766, 0.5625, 1)
+
+[node name="Title" type="Label" parent="Content/GamerOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -289.0
+offset_top = 217.0
+offset_right = 275.0
+offset_bottom = 333.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 85
+text = "Você Acertou:"
+
+[node name="Score" type="Label" parent="Content/GamerOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.0
+offset_top = 466.0
+offset_right = 202.0
+offset_bottom = 582.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 85
+text = "0/0:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Content/GamerOver"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -262.0
+offset_top = -300.0
+offset_right = 278.0
+offset_bottom = -199.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "Jogar novamente"
+
 [node name="AudioCorrect" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_36yv7")
 
 [node name="AudioIncorrect" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_1837i")
+
+[connection signal="pressed" from="Content/GamerOver/Button" to="." method="_on_button_pressed"]

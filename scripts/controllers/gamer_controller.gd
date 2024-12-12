@@ -18,10 +18,11 @@ var current_quiz: QuizQuestion:
 
 
 func _ready() -> void:
+	correct = 0
 	for button in $Content/QuestionHolder.get_children():
 		buttons.append(button)
 
-
+	randomize_array(quiz.theme)
 	load_quiz()
 
 
@@ -31,8 +32,8 @@ func load_quiz() -> void:
 		return
 		
 	question_texts.text = current_quiz.question_info
+	var options = randomize_array(current_quiz.options)
 	
-	var options = current_quiz.options
 	for i in buttons.size():
 		buttons[i].text = options[i]
 		buttons[i].pressed.connect(_buttons_answer.bind(buttons[i]))
@@ -60,6 +61,7 @@ func load_quiz() -> void:
 func _buttons_answer(button) -> void: 
 	if current_quiz.correct == button.text:
 		button.modulate = color_right
+		correct += 1
 		$AudioCorrect.play()
 	else:
 		button.modulate = color_wrong
@@ -85,5 +87,14 @@ func _next_question() -> void:
 	index += 1
 	load_quiz() 
 	
+func randomize_array(array: Array) -> Array:
+	var array_temp = array
+	array_temp.shuffle()
+	return array_temp
+	
 func _game_over() -> void:
-	print("acabaram as perguntas...")
+	$Content/GamerOver.show()
+	$Content/GamerOver/Score.text = str(correct, "/", quiz.theme.size())
+	
+func _on_button_pressed() -> void:
+	get_tree().reload_current_scene()

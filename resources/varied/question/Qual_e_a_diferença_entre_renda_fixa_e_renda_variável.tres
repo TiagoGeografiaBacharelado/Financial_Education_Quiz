@@ -6,5 +6,5 @@
 script = ExtResource("1_1l108")
 question_info = "Qual é a diferença entre \"renda fixa\" e \"renda variável\"?"
 type = 0
-options = Array[String](["a) Renda fixa oferece garantia de rentabilidade, enquanto renda variável depende de flutuações do mercado", "b) Renda fixa é sempre mais arriscada que renda variável", "c) Renda fixa é para quem já tem dinheiro, e renda variável é para quem está começando", "d) Não há diferença, os dois tipos de investimentos são a mesma coisa"])
-correct = "a) Renda fixa oferece garantia de rentabilidade, enquanto renda variável depende de flutuações do mercado"
+options = Array[String](["Renda fixa oferece garantia de rentabilidade, enquanto renda variável depende de flutuações do mercado", "Renda fixa é sempre mais arriscada que renda variável", "Renda fixa é para quem já tem dinheiro, e renda variável é para quem está começando", "Não há diferença, os dois tipos de investimentos são a mesma coisa"])
+correct = "Renda fixa oferece garantia de rentabilidade, enquanto renda variável depende de flutuações do mercado"
