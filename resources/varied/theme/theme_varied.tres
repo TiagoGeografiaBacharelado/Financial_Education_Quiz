@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="QuizTheme" load_steps=6 format=3 uid="uid://mu6ha3ld7jjl"]
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=8 format=3 uid="uid://mu6ha3ld7jjl"]
 
 [ext_resource type="Script" path="res://scripts/resources/theme.gd" id="1_ffbww"]
 [ext_resource type="Script" path="res://scripts/resources/question.gd" id="2_a5jpi"]
-[ext_resource type="Resource" uid="uid://lpo3v6flh30a" path="res://resources/varied/question/Qual_e_a_diferença_entre_renda_fixa_e_renda_variável.tres" id="3_4dxc5"]
-[ext_resource type="Resource" uid="uid://e0s51ovliic0" path="res://resources/varied/question/animal_come_com_rabo.tres" id="4_sre32"]
-[ext_resource type="Resource" uid="uid://bil3gdijr6yae" path="res://resources/varied/question/melhor_amigo_homem.tres" id="5_ld80x"]
+[ext_resource type="Resource" uid="uid://uaeks0si3v0" path="res://resources/varied/question/1.tres" id="3_m7d5i"]
+[ext_resource type="Resource" uid="uid://c88x3ihrxb4dn" path="res://resources/varied/question/2.tres" id="4_wkmfp"]
+[ext_resource type="Resource" uid="uid://buevsyh6nedqh" path="res://resources/varied/question/3.tres" id="5_obpc0"]
+[ext_resource type="Resource" uid="uid://dsvws7blrp0j1" path="res://resources/varied/question/4.tres" id="6_rpsil"]
+[ext_resource type="Resource" uid="uid://dshxxdn6xfwac" path="res://resources/varied/question/5.tres" id="7_hmxll"]
 
 [resource]
 script = ExtResource("1_ffbww")
-theme = Array[ExtResource("2_a5jpi")]([ExtResource("3_4dxc5"), ExtResource("4_sre32"), ExtResource("5_ld80x")])
+theme = Array[ExtResource("2_a5jpi")]([ExtResource("3_m7d5i"), ExtResource("4_wkmfp"), ExtResource("5_obpc0"), ExtResource("6_rpsil"), ExtResource("7_hmxll")])

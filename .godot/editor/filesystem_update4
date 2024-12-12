@@ -1,4 +1,7 @@
 res://scenes/main.tscn
-res://resources/varied/question/Qual_e_a_diferença_entre_renda_fixa_e_renda_variável.tres
+res://resources/varied/question/1.tres
+res://resources/varied/question/2.tres
+res://resources/varied/question/3.tres
+res://resources/varied/question/4.tres
+res://resources/varied/question/5.tres
 res://resources/varied/theme/theme_varied.tres
-res://scripts/controllers/gamer_controller.gd

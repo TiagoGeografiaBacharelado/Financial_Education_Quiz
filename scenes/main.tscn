@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs3pmrooj4dod"]
+[gd_scene load_steps=6 format=3 uid="uid://bs3pmrooj4dod"]
 
 [ext_resource type="Script" path="res://scripts/controllers/gamer_controller.gd" id="1_2n48k"]
 [ext_resource type="Resource" uid="uid://mu6ha3ld7jjl" path="res://resources/varied/theme/theme_varied.tres" id="2_kjxgg"]
 [ext_resource type="AudioStream" uid="uid://decrjx1b38cg7" path="res://assents/correta.wav" id="3_36yv7"]
+[ext_resource type="Texture2D" uid="uid://b0utqt2y2eony" path="res://art/Design sem nome (4).png" id="3_uh3tn"]
 [ext_resource type="AudioStream" uid="uid://bpnm6v7meqoym" path="res://assents/incorreta.wav" id="4_1837i"]
 
 [node name="Main" type="CanvasLayer"]
@@ -19,6 +20,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="Content"]
+layout_mode = 0
+offset_right = 720.0
+offset_bottom = 1280.0
+texture = ExtResource("3_uh3tn")
+
 [node name="Questionifo" type="VBoxContainer" parent="Content"]
 layout_mode = 1
 anchors_preset = 5
@@ -33,6 +40,7 @@ grow_horizontal = 2
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Pergunta"
 horizontal_alignment = 1

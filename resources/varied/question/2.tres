@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://c88x3ihrxb4dn"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_rexkl"]
+
+[resource]
+script = ExtResource("1_rexkl")
+question_info = "Por que é importante automatizar certas decisões financeiras, como pagamentos de contas ou poupanças mensais?"
+type = 0
+options = Array[String](["Para economizar tempo e evitar esquecimentos.", "Para impedir que o dinheiro seja usado para outras coisas.", "Para evitar multas ou juros desnecessários.", "Todas as alternativas."])
+correct = "Todas as alternativas."

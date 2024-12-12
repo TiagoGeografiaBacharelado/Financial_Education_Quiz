@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://buevsyh6nedqh"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_vj30u"]
+
+[resource]
+script = ExtResource("1_vj30u")
+question_info = "Qual é a relação entre hábitos automáticos e a administração financeira?"
+type = 0
+options = Array[String](["Hábitos automáticos nunca devem ser usados na administração financeira.", "Criar hábitos financeiros automáticos ajuda a poupar energia e garante eficiência no dia a dia.", "Hábitos automáticos são irrelevantes na administração financeira.", "É perigoso confiar em hábitos automáticos para finanças."])
+correct = "Criar hábitos financeiros automáticos ajuda a poupar energia e garante eficiência no dia a dia."

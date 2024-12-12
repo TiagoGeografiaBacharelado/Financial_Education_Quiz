@@ -1,23 +1,55 @@
-[gd_scene format=3 uid="uid://cwli13ufvl8pk"]
+[gd_scene load_steps=5 format=3 uid="uid://cwli13ufvl8pk"]
+
+[ext_resource type="Texture2D" uid="uid://d3s8lxu4x51a8" path="res://art/Design sem nome (3).png" id="1_nbopb"]
+[ext_resource type="Script" path="res://scripts/menu/tela_inicial.gd" id="1_nhsj0"]
+
+[sub_resource type="GDScript" id="GDScript_jlrea"]
+script/source = "extends Button
+
+
+
+func _on_pressed():
+	get_tree().change_scene_to_file(\"res://scenes/main.tscn\")
+	pass # Replace with function body.
+"
+
+[sub_resource type="GDScript" id="GDScript_5iloj"]
+script/source = "extends Button
+
+func on_credits_button_pressed():
+	get_tree().change_scene_to_file(\"res://scenes/creditos.tscn\")
+"
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 5.0
 offset_right = 5.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nhsj0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nbopb")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -5.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.122935, 0.124028, 0.107003, 1)
+color = Color(1, 1, 0.996078, 0)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
 layout_mode = 1
@@ -34,25 +66,23 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 69
 
-[node name="Play" type="Button" parent="ColorRect/VBoxContainer"]
+[node name="play" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-text = "PLAY"
+text = "Play"
+script = SubResource("GDScript_jlrea")
 
 [node name="creditos" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-text = "Creditos"
+text = "Créditos"
+script = SubResource("GDScript_5iloj")
 
 [node name="sair" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Sair"
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[connection signal="pressed" from="ColorRect/VBoxContainer/play" to="ColorRect/VBoxContainer/play" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/creditos" to="." method="_on_creditos_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/sair" to="." method="_on_sair_pressed"]

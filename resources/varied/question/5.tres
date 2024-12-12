@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dshxxdn6xfwac"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_5cgys"]
+
+[resource]
+script = ExtResource("1_5cgys")
+question_info = "Qual é o principal fator a ser considerado ao decidir entre comprar algo hoje ou poupar para comprar no futuro?"
+type = 0
+options = Array[String](["O preço do produto.", "O custo de oportunidade e suas prioridades pessoais.", "O tipo de produto.", "A quantidade de dinheiro disponível."])
+correct = "O custo de oportunidade e suas prioridades pessoais."

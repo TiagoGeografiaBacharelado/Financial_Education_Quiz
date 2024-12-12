@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://uaeks0si3v0"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_4fr3b"]
+
+[resource]
+script = ExtResource("1_4fr3b")
+question_info = "Qual é o principal objetivo da Educação Financeira?"
+type = 0
+options = Array[String](["Tornar as pessoas mais ricas.", "Ensinar as pessoas a economizarem ao máximo.", "Capacitar o cidadão a tomar decisões financeiras conscientes, responsáveis e autônomas.", "Proibir o consumismo."])
+correct = "Capacitar o cidadão a tomar decisões financeiras conscientes, responsáveis e autônomas."

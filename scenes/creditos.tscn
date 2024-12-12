@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfaqg1vog4h77"]
+
+[ext_resource type="Texture2D" uid="uid://b2m1i4xi4b304" path="res://art/Design sem nome (1).png" id="1_ov64r"]
+[ext_resource type="Script" path="res://scripts/menu/sair_creditos.gd" id="2_c4vax"]
+
+[node name="Creditos" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(720, 1280)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ov64r")
+
+[node name="Label" type="Label" parent="TextureRect"]
+custom_minimum_size = Vector2(720, 1280)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Tiago Carneiro do Nasciento
+Gabriel de Souza Oliveira"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 73.0
+offset_top = 1035.0
+offset_right = 652.0
+offset_bottom = 1177.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="sair_creditos" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Sair"
+script = ExtResource("2_c4vax")
+
+[connection signal="pressed" from="VBoxContainer/sair_creditos" to="VBoxContainer/sair_creditos" method="_on_pressed"]

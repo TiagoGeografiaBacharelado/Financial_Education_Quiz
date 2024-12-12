@@ -1,4 +1,6 @@
+VBoxContainer
 Button
 Label
+TextureRect
 ColorRect
 AudioStreamPlayer

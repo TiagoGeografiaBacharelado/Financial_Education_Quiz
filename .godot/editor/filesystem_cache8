@@ -1,26 +1,42 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733972062
-icon.svg::CompressedTexture2D::7625515978532346419::1733920906::1733921084::1::::<><>::
-README.md::TextFile::-1::1733920906::0::1::::<><>::
-::res://assents/::1733972204
-correta.wav::AudioStreamWAV::7445195690447846748::1733972030::1733972062::1::::<><>::
-incorreta.wav::AudioStreamWAV::3466875365565923892::1733972204::1733972205::1::::<><>::
-::res://resources/::1733920906
-::res://resources/varied/::1733920906
-::res://resources/varied/question/::1733965359
-animal_come_com_rabo.tres::Resource/QuizQuestion::333512686294100109::1733920906::0::1::::<><>::res://scripts/resources/question.gd
-melhor_amigo_homem.tres::Resource/QuizQuestion::2972350549014276492::1733920906::0::1::::<><>::res://scripts/resources/question.gd
-Qual_e_a_diferença_entre_renda_fixa_e_renda_variável.tres::Resource/QuizQuestion::803944137578795530::1733965359::0::1::::<><>::res://scripts/resources/question.gd
-::res://resources/varied/theme/::1733965359
-theme_varied.tres::Resource/QuizTheme::885448449830269553::1733965359::0::1::::<><>::res://scripts/resources/theme.gd<>res://scripts/resources/question.gd<>uid://lpo3v6flh30a::::res://resources/varied/question/Qual_e_a_diferença_entre_renda_fixa_e_renda_variável.tres<>uid://e0s51ovliic0::::res://resources/varied/question/animal_come_com_rabo.tres<>uid://bil3gdijr6yae::::res://resources/varied/question/melhor_amigo_homem.tres
-::res://scenes/::1733971609
-main.tscn::PackedScene::3708555545883194403::1733971609::0::1::::<><>::res://scripts/controllers/gamer_controller.gd<>uid://mu6ha3ld7jjl::::res://resources/varied/theme/theme_varied.tres<>uid://dvfoanv1p8cth::::res://assents/correta.mp3<>uid://j11fx6hor110::::res://assents/incorreta.mp3
-telaInicial.tscn::PackedScene::6340237751106834644::1733920906::0::1::::<><>::
-::res://scripts/::1733921735
-::res://scripts/controllers/::1733971488
-gamer_controller.gd::GDScript::-1::1733971488::0::1::::<>Node<>::
-::res://scripts/enum/::1733920906
-enums.gd::GDScript::-1::1733920906::0::1::::Enum<>RefCounted<>::
-::res://scripts/resources/::1733920906
-question.gd::GDScript::-1::1733920906::0::1::::QuizQuestion<>Resource<>::
-theme.gd::GDScript::-1::1733920906::0::1::::QuizTheme<>Resource<>::
+::res://::1734036749
+icon.svg::CompressedTexture2D::7625515978532346419::1733848912::1734006793::1::::<><>::
+README.md::TextFile::-1::1733861232::0::1::::<><>::
+::res://art/::1734025737
+Cozy Orange.png::CompressedTexture2D::5719027885633268143::1734017227::1734017264::1::::<><>::
+Design sem nome (1).png::CompressedTexture2D::4307886482241825399::1734015970::1734016213::1::::<><>::
+Design sem nome (2).png::CompressedTexture2D::6475653552416252910::1734016004::1734016213::1::::<><>::
+Design sem nome (3).png::CompressedTexture2D::9163733017294246921::1734019645::1734019885::1::::<><>::
+Design sem nome (4).png::CompressedTexture2D::4183612566070224410::1734019785::1734019885::1::::<><>::
+Design sem nome.png::CompressedTexture2D::1273497906332917752::1734015242::1734015267::1::::<><>::
+investimentos-isentos-de-imposto-de-renda.webp::CompressedTexture2D::2849404698787844490::1734008066::1734025737::1::::<><>::
+::res://assents/::1734006793
+correta.wav::AudioStreamWAV::7445195690447846748::1734006710::1734006793::1::::<><>::
+incorreta.wav::AudioStreamWAV::3466875365565923892::1734006710::1734006793::1::::<><>::
+::res://resources/::1733864902
+::res://resources/financial/::1733864930
+::res://resources/financial/question/::1733864930
+::res://resources/varied/::1733951807
+::res://resources/varied/question/::1734036645
+1.tres::Resource/QuizQuestion::41295252457083219::1734035789::0::1::::<><>::res://scripts/resources/question.gd
+2.tres::Resource/QuizQuestion::7158644598191852095::1734035926::0::1::::<><>::res://scripts/resources/question.gd
+3.tres::Resource/QuizQuestion::3799763541408437827::1734035926::0::1::::<><>::res://scripts/resources/question.gd
+4.tres::Resource/QuizQuestion::8467382770345426904::1734035926::0::1::::<><>::uid://bgujjqvgnvfhq::::res://art/investimentos-isentos-de-imposto-de-renda.webp<>res://scripts/resources/question.gd
+5.tres::Resource/QuizQuestion::8438549624027709458::1734036645::0::1::::<><>::res://scripts/resources/question.gd
+::res://resources/varied/theme/::1734036645
+theme_varied.tres::Resource/QuizTheme::885448449830269553::1734036645::0::1::::<><>::res://scripts/resources/theme.gd<>res://scripts/resources/question.gd<>uid://uaeks0si3v0::::res://resources/varied/question/1.tres<>uid://c88x3ihrxb4dn::::res://resources/varied/question/2.tres<>uid://buevsyh6nedqh::::res://resources/varied/question/3.tres<>uid://dsvws7blrp0j1::::res://resources/varied/question/4.tres<>res://resources/varied/question/5.tres
+::res://scenes/::1734036646
+creditos.tscn::PackedScene::5124769170917316292::1734032842::0::1::::<><>::uid://b2m1i4xi4b304::::res://art/Design sem nome (1).png<>res://scripts/menu/sair_creditos.gd
+main.tscn::PackedScene::3708555545883194403::1734036646::0::1::::<><>::res://scripts/controllers/gamer_controller.gd<>uid://mu6ha3ld7jjl::::res://resources/varied/theme/theme_varied.tres<>uid://decrjx1b38cg7::::res://assents/correta.wav<>uid://b0utqt2y2eony::::res://art/Design sem nome (4).png<>uid://bpnm6v7meqoym::::res://assents/incorreta.wav
+telaInicial.tscn::PackedScene::6340237751106834644::1734032842::0::1::::<><>::uid://d3s8lxu4x51a8::::res://art/Design sem nome (3).png<>res://scripts/menu/tela_inicial.gd
+::res://scripts/::1734029840
+::res://scripts/controllers/::1734024712
+gamer_controller.gd::GDScript::-1::1734024712::0::1::::<>Node<>::
+::res://scripts/enum/::1733864143
+enums.gd::GDScript::-1::1733864115::0::1::::Enum<>RefCounted<>::
+::res://scripts/menu/::1734032114
+sair_creditos.gd::GDScript::-1::1734032114::0::1::::<>Button<>::
+tela_inicial.gd::GDScript::-1::1734031638::0::1::::<>Control<>::
+::res://scripts/resources/::1734035291
+question.gd::GDScript::-1::1733864792::0::1::::QuizQuestion<>Resource<>::
+theme.gd::GDScript::-1::1734035291::0::1::::QuizTheme<>Resource<>::
